@@ -7,6 +7,7 @@
 #define BUTON_START 3
 #define BUTON_DIFICULTATE 2
 #define NUMAR_MAXIM_CUVINTE 15
+#define TIMP_MAX_JOC 30000
 
 // Funcțiile pentru gestionarea butoanelor și rundelor
 void toggleButonStart();
@@ -34,10 +35,11 @@ bool selectareDificultate = false;   // Indică dacă jucătorul selectează dif
 
 // Dicționarul cuvintelor pentru joc
 const char* dictionar[NUMAR_MAXIM_CUVINTE] = {
-    "abandon", "abilitate", "abstract", "accesibil", "activitate",
-    "adaptabil", "ambiguu", "analogie", "antagonist", "anxietate",
-    "baza", "beneficiu", "biblioteca", "binefacere", "blocaj",
+    "calculator", "programare", "algoritm", "retea", "informatica",
+    "hardware", "software", "internet", "robotica", "inteligenta",
+    "memorie", "procesor", "senzor", "criptare", "securitate"
 };
+
 
 /**
  *  Schimbă starea butonului de start la fiecare apăsare
@@ -126,7 +128,7 @@ void incepeJoc() {
  */
 void executaRunda() {
   if (rundaInceputa) {
-    if (timpCurent - timpUltimaActualizare < 30000) {
+    if (timpCurent - timpUltimaActualizare < TIMP_MAX_JOC) {
       timpCurent = millis();
       bool sarireCuvant = false;
 
