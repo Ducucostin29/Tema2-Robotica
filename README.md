@@ -167,7 +167,7 @@ void executaRunda() {
 
 
 ## Video cu funcționalitatea montajului fizicc
-[![Watch the video] (https://www.youtube.com/watch?v=vYdteI34t-o&ab_channel=AlexandruApostu)
+[![Watch the video](https://www.youtube.com/watch?v=HCSV67qvDe0&ab_channel=AlexandruApostu)
 
 ## Schema electrică (TinkerCAD)
 - Conectarea LED-ului RGB la pinii 4, 5 și 6.
