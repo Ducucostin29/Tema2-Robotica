@@ -159,8 +159,15 @@ void executaRunda() {
 ```
 
 ## Poze ale setup-ului fizic
+![WhatsApp Image 2024-11-04 at 19 27 37](https://github.com/user-attachments/assets/b8a768e2-3912-49c6-a86c-0f1f77fb00aa)
+![WhatsApp Image 2024-11-04 at 19 27 37 (1)](https://github.com/user-attachments/assets/74665cb5-1dfc-4eb7-a168-8487ecf6a5ec)
+![WhatsApp Image 2024-11-04 at 19 27 37 (2)](https://github.com/user-attachments/assets/9042b0a2-b5de-42cc-b4c8-55ed8c43d0d7)
 
-## Video cu funcționalitatea montajului fizic
+
+
+
+## Video cu funcționalitatea montajului fizicc
+[![Watch the video] (https://www.youtube.com/watch?v=vYdteI34t-o&ab_channel=AlexandruApostu)
 
 ## Schema electrică (TinkerCAD)
 - Conectarea LED-ului RGB la pinii 4, 5 și 6.
