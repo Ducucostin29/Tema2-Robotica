@@ -245,14 +245,17 @@ void loop() {
         case 1:
           intervalAfisareCuvinte = 20000;
           Serial.println("Ușor");
+          delay(200);
           break;
         case 2:
           intervalAfisareCuvinte = 10000;
           Serial.println("Mediu");
+          delay(200);
           break;
         case 3:
           intervalAfisareCuvinte = 5000;
           Serial.println("Greu");
+          delay(200);
           break;
       }
     }
