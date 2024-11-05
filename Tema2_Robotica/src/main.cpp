@@ -20,7 +20,7 @@ void executaRunda();
  */
 bool jocInDesfasurare = false;       // Indică dacă jocul este activ
 bool stareButonStart = true;         // Starea curentă a butonului de start
-int intervalAfisareCuvinte = 10000;  // Intervalul de timp între cuvinte, se ajustează pe baza dificultății
+int intervalAfisareCuvinte = 20000;  // Intervalul de timp între cuvinte, se ajustează pe baza dificultății
 bool rundaInceputa = false;          // Indică dacă o rundă este în desfășurare
 int timpCurent = millis();           // Timpul curent folosit pentru verificări de temporizare
 int indexCuvantCurent = 0;           // Indexul cuvântului curent în dicționar
@@ -76,6 +76,9 @@ void incepeJoc() {
     timpCurent = millis();
     timpUltimaActualizare = timpCurent;
     int timpUltimSecundar = timpCurent;
+
+    esteGresit = false;
+    indexLiteraCurenta = 0;
     
     // LED-urile clipesc pentru numărătoarea inversă
     digitalWrite(LED_ROSU, HIGH);
@@ -240,15 +243,15 @@ void loop() {
       dificultateModificata = false;
       switch (nivelDificultate) {
         case 1:
-          intervalAfisareCuvinte = 10000;
+          intervalAfisareCuvinte = 20000;
           Serial.println("Ușor");
           break;
         case 2:
-          intervalAfisareCuvinte = 5000;
+          intervalAfisareCuvinte = 10000;
           Serial.println("Mediu");
           break;
         case 3:
-          intervalAfisareCuvinte = 3000;
+          intervalAfisareCuvinte = 5000;
           Serial.println("Greu");
           break;
       }
